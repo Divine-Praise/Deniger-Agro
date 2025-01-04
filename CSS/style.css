@@ -1,0 +1,220 @@
+/* font family playwrite */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --white : #FFFFFF;
+    --black: #1F1E17;
+    --green: #4BAF47;
+    --yellow: #EEC044;
+}
+
+
+/* <NAVBAR>*/
+nav{
+    /* border-bottom: 1px solid rgb(231, 226, 226); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1.3rem;
+    position: fixed;
+    width: 100%;
+    border-bottom: 2px solid rgba(202, 196, 196, 0.1);
+    z-index: 2000;
+}
+
+.logo-name{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .logo{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+nav .logo img{
+    width: 100%;
+    height: 100%;
+}
+
+nav .logo-name{
+    color: var(--white);
+}
+
+nav .logo-name span{
+    font-size: 1.5rem;
+    font-family: "Playwrite NO Guides", serif;
+    font-weight: 400;
+}
+
+nav .media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+nav .media a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav .media i{
+    /* border: 1px solid black; */
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: rgba(162, 162, 162, 0.1);
+}
+
+nav .nav-link ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 2rem;
+    padding: 0;
+    margin: 0;
+}
+
+nav .nav-link ul li{
+    font-size: .8rem;
+}
+
+nav .nav-link ul li a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+nav .poll{
+    width: 1px;
+    height: 25px;
+    border-radius: 10px;
+    background-color: var(--white);
+    margin-right: 1.5rem;
+}
+
+nav .call{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .7rem;
+}
+
+nav .call .img{
+    width: 37px;
+    height: 37px;
+}
+
+nav .call .img img{
+    width: 100%;
+    height: 100%;
+}
+
+nav .call .number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: .2rem;
+}
+
+nav .call .number p{
+    padding: 0;
+    margin: 0;
+    font-size: .6rem;
+    color: var(--white);
+}
+
+nav .call .number h6{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--white);
+}
+/* </ NAVBAR> */
+
+/* <HERO> */
+.hero-section .slide-1{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100vh !important;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/images\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .slide-2{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100vh !important;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/images\ \(2\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .slide-3{
+    /* border: 2px solid green; */
+    width: 100%;
+    height: 100vh !important;
+    background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4),rgba(0,0,0,.4)),url(../images/images\ \(3\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section .content h4{
+    text-align: center;
+    font-size: 3.3rem;
+    line-height: 3.7rem;
+    font-weight: 700;
+    transform: scaleY(1.1);
+    display: inline-block;
+    color: var(--white);
+}
+.hero-section .content h4 span{
+    color: var(--yellow);
+}
+
+.hero-section .content a{
+    text-decoration: none;
+    /* border: 1px solid black; */
+    width: 26%;
+    padding-block: .7rem;
+    font-size: .7rem;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--green);
+    border-radius: 5px;
+    margin-top: 2rem;
+}
+/* </HERO> */
