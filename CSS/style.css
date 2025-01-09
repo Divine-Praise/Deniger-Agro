@@ -1,5 +1,7 @@
 /* font family playwrite */
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+NO+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* font family play write island */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IS:wght@100..400&display=swap');
 
 *{
     padding: 0;
@@ -14,6 +16,12 @@
     --black: #1F1E17;
     --green: #4BAF47;
     --yellow: #EEC044;
+    --gray: #878680;
+    --green-yellow: #C5CE38;
+    --light-yellow: #F8F7F0;
+
+
+    --max-width: 1000px;
 }
 
 
@@ -92,11 +100,30 @@ nav .nav-link ul{
 
 nav .nav-link ul li{
     font-size: .8rem;
+    position: relative;
 }
 
 nav .nav-link ul li a{
     text-decoration: none;
     color: var(--white);
+    transition: color 0.4s ease-in-out;
+}
+
+nav .nav-link ul li a::after{
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 4px;
+    width: 100%;
+    left: 0;
+    background-color: var(--green);
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+    transform: scale(0);
+    border-radius: 10px;
+}
+nav .nav-link ul li a:hover::after{
+    transform: scale(1);
 }
 
 nav .poll{
@@ -143,6 +170,40 @@ nav .call .number h6{
     font-size: .8rem;
     font-weight: 600;
     color: var(--white);
+}
+
+nav.scrolled{
+    background: var(--white);
+    transition: ease-in-out .3s;
+    box-shadow: 2px 2px 5px 0px #dedede;
+}
+
+nav.scrolled .media a{
+    color: var(--green);
+}
+
+nav.scrolled .number p{
+    color: var(--black);
+}
+
+nav.scrolled .number h6{
+    color: var(--green);
+}
+
+nav.scrolled .nav-link ul li a{
+    color: var(--black);
+}
+
+nav.scrolled .logo-name{
+    color: var(--black);
+}
+
+nav.scrolled .logo-name .first{
+    color: var(--green);
+}
+
+nav.scrolled .logo-name span{
+    color: var(--yellow);
 }
 /* </ NAVBAR> */
 
@@ -218,3 +279,435 @@ nav .call .number h6{
     margin-top: 2rem;
 }
 /* </HERO> */
+
+/* <LEADER> */
+.leader-container{
+    /* border: 1px solid black; */
+    padding-block: 5rem;
+    max-width: var(--max-width);
+    margin: auto;
+}
+.leader-box{
+    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.leader-box .left{
+    /* border: 1px solid green; */
+    width: 45%;
+}
+
+.leader-box .left p:nth-child(1){
+    font-family: "Playwrite IS", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--yellow);
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.leader-box .left h4{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+}
+
+.leader-box .left .text{
+    font-size: .73rem;
+    padding: 0;
+    margin: 0;
+    color: var(--gray);
+}
+
+.leader-box .left .types{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.leader-box .left .types .left h5{
+    font-family: "Playwrite IS", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--green);
+    padding: 0;
+    margin: 0;
+    margin-bottom: .3rem;
+}
+
+.leader-box .left .types .left p{
+    padding: 0;
+    margin: 0;
+    font-size: .74rem;
+    color: var(--gray);
+}
+
+.leader-box .left a{
+    /* border: 1px solid black; */
+    text-decoration: none;
+    padding-inline: 2rem;
+    padding-block: .7rem;
+    text-align: center;
+    border-radius: 5px;
+    color: var(--white);
+    background: var(--green);
+    font-size: .7rem;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+.leader-box .left .types .right .image{
+    width: 140px;
+    height: 80px;
+}
+
+.leader-box .left .types .right .image img{
+    width: 100%;
+    height: 100%;
+}
+
+.leader-box .right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+.leader-box .right .img{
+    width: 250px;
+    height: 350px;
+}
+.leader-box .right .img img{
+    width: 100%;
+    height: 100%;
+}
+/* </LEADER> */
+
+/* <SERVICE> */
+.service-section{
+    display: block;
+    padding-block: 4rem 3rem;
+}
+
+.service-section .topic{
+    font-family: "Playwrite IS", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--yellow);
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.service-section h4{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.service-section .service-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* border: 1px solid black; */
+}
+
+.service-section  .service-container .box{
+    /* border: 1px solid black; */
+    width: 270px;
+    position: relative;
+    margin-top: .9rem;
+    box-shadow: 4px 4px 20px 0px #dedede;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-section  .service-container .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+
+.service-section  .service-container .box .img{
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid; */
+}
+
+.service-section  .service-container .box .img img{
+    width: 100%;
+    height: 100%;
+}
+
+.service-section  .service-container .box .box-img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 35%;
+    right: 0;
+    margin-right: 13px;
+}
+
+.service-section  .service-container .box .box-content{
+    padding-inline: 20px;
+}
+
+.service-section  .service-container .box .box-content h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.service-section  .service-container .box .box-content p{
+    font-size: .73rem;
+    line-height: 1.4rem;
+    color: var(--gray);
+}
+/* </SERVICE> */
+
+/* <QUESTION> */
+.question-main{
+    display: block;
+    padding-block: 3rem 3rem;
+}
+
+.question-section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    /* border: 1px solid black; */
+}
+
+.question-section .img-1{
+    /* border: 1px solid black; */
+    width: 35%;
+    margin-right: -180px;
+}
+
+.question-section .img-1 img{
+    width: 100%;
+}
+
+.question-section .img-2{
+    /* border: 1px solid black; */
+    width: 27%;
+}
+
+.question-section .img-2 img{
+    width: 100%;
+}
+
+.question-section .questions{
+    /* border: 1px solid black; */
+    width: 35%;
+    margin-left: 3rem;
+}
+
+.question-section .questions .topic{
+    font-family: "Playwrite IS", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--yellow);
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+    text-align: left;
+}
+
+.question-section .questions h4{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.question-section .questions .question-content .content{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: .3rem;
+    background-color: var(--light-yellow);
+    padding-block: .2rem;
+    margin-block: .5rem;
+    border-radius: 5px;
+}
+
+.question-section .questions .question-content .content p{
+    padding: 0;
+    margin: 0;
+    font-size: .9rem;
+    font-weight: 600;
+    padding-block: .7rem;
+    margin-left: 1rem;
+}
+
+.question-section .questions .question-content .content i{
+    /* border: 1px solid black; */
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    background-color: var(--green-yellow);
+    color: var(--white);
+}
+
+.question-section .questions .question-content .dropdown-text{
+    font-size: .75rem;
+    padding: 20px;
+    color: var(--gray);
+    display: none;
+}
+
+.question-section .questions .question-content .active2{
+    display: block;
+    transition: all ease-in-out .4s;
+}
+
+/* </QUESTION> */
+
+/* <TEAM> */
+.team-section{
+    display: block;
+    padding-block: 4rem 3rem;
+}
+
+.team-section .topic{
+    font-family: "Playwrite IS", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--yellow);
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.team-section h4{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.team-section .img-box{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 2.3rem;
+}
+
+.team-section .img-box .box{
+    /* border: 1px solid black; */
+    width: 275px;
+}
+
+.team-section .img-box .box .img{
+    width: 91%;
+    height: 280px;
+    position: relative;
+}
+
+.team-section .img-box .box .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-section .img-box .box .name{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -40px;
+}
+
+.team-section .img-box .box .name img{
+    background: var(--green);
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin-right: -18px;
+    z-index: 20;
+}
+.team-section .img-box .box .name .name-content{
+    width: 70%;
+    /* border: 1px solid; */
+    text-align: right;
+    padding-right: 2.6rem;
+    padding-block: .8rem;
+    background: var(--white);
+    box-shadow: 2px 2px 5px 0px #d4d3d3;
+    z-index: 19;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-section .img-box .box .name .name-content p:nth-child(1){
+    font-size: .95rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    text-align: right;
+}
+
+.team-section .img-box .box .name .name-content p:nth-child(2){
+    font-size: .8rem;
+    color: var(--gray);
+    padding: 0;
+    margin: 0;
+}
+
+.team-section .img-box .box:hover .img img {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-section .img-box .box:hover .name-content {
+    /* transform: translateX(-10px); */
+    transform: scale(1.07);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* </TEAM> */
+
+/* <BLOG> */
+.blog-section{
+    display: block;
+    padding-block: 4rem 3rem;
+}
+
+.blog-section .topic{
+    font-family: "Playwrite IS", serif;
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--yellow);
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+    text-align: center;
+}
+
+.blog-section h4{
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 2.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+/* </BLOG> */
