@@ -11,8 +11,11 @@
     <!-- Boxicon icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Map APi -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 
     <!-- style css -->
      <link rel="stylesheet" href="CSS/style.css">
@@ -310,12 +313,31 @@
     </div>
     <!-- </TEAM> -->
 
-    <!-- <Blog> -->
-    <div class="blog-section">
-        <p class="topic">From the Blog</p>
-        <h4>News & Articles</h4>
+    <!-- <Contact us> -->
+    <div class="contact-section">
+        <div class="map" id="mapBox"></div>
+        <div class="contact-form">
+            <div class="container">
+                <p class="topic"> Contact us</p>
+                <h4>Write a Message</h4>
+    
+                <form action="#" class="form-contact">
+                    <div class="top">
+                        <div class="input-con">
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div class="input-con">
+                            <input type="text" name="email" id="email" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <textarea name="message" id="message" rows="5" placeholder="Write a Message"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-    <!-- </Blog> -->
+    <!-- </Contact us> -->
 </body>
 
 <!-- Bootstrap Js -->
@@ -325,6 +347,9 @@
 
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Map Api -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
 <script src="JS/script.js"></script>
 

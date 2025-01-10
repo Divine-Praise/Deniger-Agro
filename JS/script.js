@@ -67,3 +67,15 @@ var swiper = new Swiper(".mySwiper2", {
     },
 });
 
+// Map integration
+const map = L.map('mapBox').setView([6.6018, 3.3515], 13); // Centered on Ikeja, Nigeria
+
+// Add OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+}).addTo(map);
+
+// Add a marker
+L.marker([6.6018, 3.3515]).addTo(map)
+    .bindPopup('Ikeja, Lagos, Nigeria') // Popup text
+    .openPopup();
