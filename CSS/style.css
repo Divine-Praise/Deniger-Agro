@@ -19,6 +19,7 @@
     --gray: #878680;
     --green-yellow: #C5CE38;
     --light-yellow: #F8F7F0;
+    --footer-black: #24231D;
 
 
     --max-width: 1000px;
@@ -797,4 +798,213 @@ nav.scrolled .logo-name span{
     padding-inline: 15px;
     font-size: .7rem;
 }
+
+.contact-section .contact-form .container form BUTTON{
+    border: 1PX solid;
+    font-size: .7rem;
+    padding-block: .7rem;
+    padding-inline: 2rem;
+    border-radius: 5px;
+    margin-top: 12px;
+    border: none;
+    outline: none;
+    color: var(--white);
+    background: var(--green);
+    cursor: pointer;
+}
 /* </Contact us> */
+
+/* <FOOTER> */
+.footer-section{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 4rem;
+    padding-block: 6rem;
+    background-color: var(--footer-black);
+    position: relative;
+}
+
+.footer-section .boxes{
+    border: 1px solid;
+
+}
+
+.footer-section .boxes .logo{
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+    color: var(--white);
+}
+
+.footer-section .boxes .logo span{
+    font-size: 1.8rem;
+    font-family: "Playwrite NO Guides", serif;
+    font-weight: 400;
+}
+
+.footer-section .boxes .logo span:nth-child(1){
+    color: var(--green);
+}
+
+.footer-section .boxes .logo span:nth-child(2){
+    color: var(--yellow);
+}
+
+.footer-section .boxes h2{
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.footer-section .boxes p{
+    font-size: .7rem;
+    color: var(--gray);
+}
+
+.footer-section .boxes ul{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .boxes ul li{
+    font-size: .75rem;
+    position: relative;
+    list-style-type: none;
+    padding-block: .3rem;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    color: var(--gray);
+}
+
+.footer-section .boxes ul li a{
+    text-decoration: none;
+    color: var(--gray);
+    transition: color 0.4s ease-in-out;
+    /* margin-left: .5rem; */
+}
+
+.footer-section .boxes .media{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.1rem;
+}
+
+.footer-section .boxes .media a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.footer-section .boxes .media i{
+    /* border: 1px solid black; */
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    background-color: rgba(162, 162, 162, 0.1);
+    /* padding-left: .5rem; */
+
+}
+
+.footer-section .boxes h6{
+    font-size: .7rem;
+    /* font-weight: 600; */
+    color: var(--white);
+    margin-top: .4rem;
+}
+
+.footer-section .boxes .date{
+    color: var(--yellow);
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .boxes .bottom-text{
+    margin-top: 2rem;
+}
+
+.footer-section .boxes .cn{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-block: .5rem;
+    gap: .3rem;
+}
+
+.footer-section .boxes .cn i{
+    color: var(--yellow);
+}
+
+.footer-section .boxes .cn p{
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .boxes .top{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .boxes .top .poll{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: .2rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: .5rem;
+}
+
+.footer-section .boxes .top .poll .poll-1{
+    width: 60%;
+    height: 3px;
+    border-radius: 10px;
+    background: var(--green);
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .boxes .top .poll .poll-2{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: var(--green);
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section .boxes form{
+    /* border: 1px solid white; */
+    border-radius: 5px;
+    background: var(--white);
+    color: var(--gray);
+    margin-top: .5rem;
+}
+
+.footer-section .boxes form input{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: .7rem;
+    margin-left: 5px;
+    padding: 9px;
+}
+
+.footer-section .boxes form button{
+    border: none;
+    background: none;
+    font-size: .9rem;
+    padding: 9px 12px 9px 12px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+/* </FOOTER> */
