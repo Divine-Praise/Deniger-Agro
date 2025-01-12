@@ -1,11 +1,23 @@
+const navHandler = document.querySelector('.nav-handler');
+const nav = document.querySelector('nav');
+const phoneNav = document.querySelector('.phone-nav');
+
+navHandler.addEventListener('click', () => {
+    navHandler.classList.toggle('active');
+    phoneNav.classList.toggle('active');
+});
+
 //onscroll
 document.addEventListener('scroll', () =>{
+    const phoneNav = document.querySelector('.phone-nav');
     const nav = document.querySelector('nav');
     
     if (window.scrollY > 0){
         nav.classList.add('scrolled');
+        phoneNav.classList.add('scrolled');
     }else{
         nav.classList.remove('scrolled');
+        phoneNav.classList.remove('scrolled');
     }
 });
 
@@ -79,3 +91,4 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 L.marker([6.6018, 3.3515]).addTo(map)
     .bindPopup('Ikeja, Lagos, Nigeria') // Popup text
     .openPopup();
+    

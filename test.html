@@ -1,0 +1,62 @@
+<style>
+/* Basic Styling */
+.nav-handler {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    position: relative;
+    background-color: #4BAF47; /* Background color */
+    border-radius: 8px; /* Rounded edges */
+    padding: 10px; /* Space inside */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    transition: transform 0.3s ease-in-out; /* Subtle animation on click */
+}
+
+.nav-handler:hover {
+    transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+.nav-handler span {
+    display: block;
+    height: 4px; /* Thicker lines */
+    width: 100%;
+    background-color: white; /* Line color */
+    border-radius: 2px; /* Smooth ends */
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active State */
+.nav-handler.active span:nth-child(1) {
+    transform: translateY(12px) rotate(45deg); /* Cross effect */
+}
+
+.nav-handler.active span:nth-child(2) {
+    opacity: 0; /* Fade out the middle line */
+}
+
+.nav-handler.active span:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg); /* Cross effect */
+}
+
+</style>
+
+<div class="nav-handler" id="navHandler">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+
+<script>
+    // Select the nav-handler
+const navHandler = document.getElementById('navHandler');
+
+// Add a click event listener
+navHandler.addEventListener('click', () => {
+    navHandler.classList.toggle('active'); // Toggle the 'active' class
+});
+
+</script>
