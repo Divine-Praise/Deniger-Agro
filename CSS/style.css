@@ -1503,8 +1503,13 @@ nav.scrolled .nav-handler{
 
 @media(max-width: 476px){
     .hero-section .content h4{
-            font-size: 2.4rem;
+            font-size: 2.5rem;
     }
+
+    .hero-section .content a{
+        width: 37%;
+    }
+
 }
 @media(max-width: 440px){
     .leader-box .left h4{
@@ -1568,14 +1573,21 @@ nav.scrolled .nav-handler{
         font-size: 1.4rem;
     }
 
-    .hero-section .content h4{
-        font-size: 2.2rem;
-    }
 }
 
 @media(max-width: 382px){
     .footer-section{
         flex-direction: column;
         padding-left: 2rem;
+    }
+
+    .phone-nav .nav-phone-link{
+        padding-inline: 1rem 0;
+    }
+}
+
+@media(max-width: 364px){
+    .phone-nav .nav-phone-link{
+        padding-inline: .5rem 0;
     }
 }
