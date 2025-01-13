@@ -1510,6 +1510,10 @@ nav.scrolled .nav-handler{
         width: 37%;
     }
 
+    .contact-section .contact-form .container{
+        width: 95%;
+    }    
+
 }
 @media(max-width: 440px){
     .leader-box .left h4{
