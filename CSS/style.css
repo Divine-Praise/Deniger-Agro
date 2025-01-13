@@ -875,7 +875,7 @@ nav.scrolled .nav-handler{
 
 /* <FOOTER> */
 .footer-section{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -1068,6 +1068,44 @@ nav.scrolled .nav-handler{
 }
 /* </FOOTER> */
 
+/* <RIGHT RESERVED> */
+
+.res .content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-block: 1rem;
+    background: #1F1E17;
+}
+
+.res .content p{
+    font-size: .7rem;
+    color: var(--gray);
+    padding: 0;
+    margin: 0;
+}
+
+.res .content .terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.res .content .terms a{
+    font-size: .7rem;
+    text-decoration: none;
+    color: var(--gray);
+}
+
+.res .content .terms .poll{
+    width: 1px;
+    height: 15px;
+    border-radius: 10px;
+    background-color: var(--gray);
+}
+/* </RIGHT RESERVED> */
+
 
 /* Making site responsive for all devices */
 
@@ -1151,7 +1189,7 @@ nav.scrolled .nav-handler{
 
     .phone-nav .nav-phone-link .nav-link ul li a{
         text-decoration: none;
-        color: var(--black);
+        color: var(--footer-black);
         font-size: .8rem;
     }
 
@@ -1204,7 +1242,7 @@ nav.scrolled .nav-handler{
 
     .phone-nav .nav-phone-link .bottom .poll{
         width: 1px;
-        height: 25px;
+        height: 22px;
         border-radius: 10px;
         background-color: var(--footer-black);
         margin-left: 1.5rem;
@@ -1265,9 +1303,9 @@ nav.scrolled .nav-handler{
     .phone-nav.scrolled .logo-name span{
         color: var(--yellow);
     }
-    
-    .phone-nav.scrolled .nav-handler{
-        background-color: var(--green);
+
+    .phone-nav.scrolled .nav-handler span{
+        background: var(--gray);
     }
 
     /* Show nav */
@@ -1412,6 +1450,63 @@ nav.scrolled .nav-handler{
     }
 }
 
+@media(max-width: 510px){
+    .hero-section .content h4{
+        font-size: 2.8rem;
+    }
+}
+
+@media(max-width: 500px){
+    .service-section  .service-container .box{
+        width: 300px;
+    }
+
+    .service-section  .service-container .box .box-content{
+        padding-inline: 20px;
+    }
+
+    .service-section  .service-container .box .box-content h5{
+        font-size: 1.1rem;
+    }
+
+    .service-section  .service-container .box .box-content p{
+        font-size: .7rem;
+    }
+
+    .team-section .img-box .box{
+        width: 300px;
+    }
+
+    .team-section .img-box{
+        gap: 3rem;
+    }
+
+    .team-section .img-box .box .name .name-content{
+        width: 70%;
+        padding-block: .8rem;
+        padding-right: 2.6rem;
+    }
+
+    .team-section .img-box .box .name .name-content p:nth-child(1){
+        font-size: .95rem;
+    }
+
+    .team-section .img-box .box .name .name-content p:nth-child(2){
+        font-size: .8rem;
+    }
+
+    .team-section .img-box .box .name img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 476px){
+    
+}
+.hero-section .content h4{
+        font-size: 2.4rem;
+    }
 @media(max-width: 440px){
     .leader-box .left h4{
         font-size: 1.8rem;
@@ -1452,6 +1547,30 @@ nav.scrolled .nav-handler{
 
     .phone-nav .nav-phone-link .bottom .call .number h6{
         font-size: .7rem;
+    }
+
+    .leader-box .left h4{
+        font-size: 1.4rem;
+    }
+
+    .question-section .questions h4{
+        font-size: 1.4rem;
+    }
+
+    .service-section h4{
+        font-size: 1.4rem;
+    }
+
+    .team-section h4{
+        font-size: 1.4rem;
+    }
+
+    .contact-section .contact-form h4{
+        font-size: 1.4rem;
+    }
+
+    .hero-section .content h4{
+        font-size: 2.2rem;
     }
 }
 
