@@ -1539,6 +1539,7 @@ nav.scrolled .nav-handler{
     .footer-section{
         flex-direction: column;
         padding-left: 2rem;
+        padding-block: 3rem;
     }
 
 }
@@ -1582,7 +1583,7 @@ nav.scrolled .nav-handler{
 @media(max-width: 382px){
     .footer-section{
         flex-direction: column;
-        padding-left: 2rem;
+        padding-left: 1.4rem;
     }
 
     .phone-nav .nav-phone-link{
