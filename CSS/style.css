@@ -1502,11 +1502,10 @@ nav.scrolled .nav-handler{
 }
 
 @media(max-width: 476px){
-    
-}
-.hero-section .content h4{
-        font-size: 2.4rem;
+    .hero-section .content h4{
+            font-size: 2.4rem;
     }
+}
 @media(max-width: 440px){
     .leader-box .left h4{
         font-size: 1.8rem;
